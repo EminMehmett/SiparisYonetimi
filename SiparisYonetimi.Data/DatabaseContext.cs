@@ -16,3 +16,12 @@ namespace SiparisYonetimi.Data
         public virtual DbSet<User> Users { get; set; }
     }
 }
+/*
+    Proje yaparken classları ve database context i kurduktan sonra veritabanını otomatik oluşturmak yerine migration la oluşturmamız gerekir.
+    Migration u aktif etmek için Visual Studio da en üst  menüden Tools > Nuget Pack... Maneger > Package manage conole menüsünü aktif ediyoruz.
+    Önce Default Project bölümünden database context inizin bulunduğu data katmanını seçiyoruz.
+    Sonra aşağıdaki kod alanına Enable-migrations yazıp enter a basarak Initialcreate class ının oluşturulmasını sağlıyoruz.
+    Oluşan Configuration sınıfının içerisinde başlangıç verisi oluşturabileceğimiz Seed metodu oluşuyor bunu kullanarak veritabanı oluştuktan sonra örnek data oluşturabiliz 
+    Eğer enable-migrations tan sonra initial create classı oluşmazsa P.M.C komut ekranına add-migration InitialCreate yazıp enter a basaak kendimiz oluşturabiliriz
+    
+ */

@@ -62,19 +62,46 @@
     <Compile Include="AnaMenu.Designer.cs">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="KategoriYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriYonetimi.Designer.cs">
+      <DependentUpon>KategoriYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="KullaniciYonetimi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KullaniciYonetimi.Designer.cs">
       <DependentUpon>KullaniciYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="MarkaYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarkaYonetimi.Designer.cs">
+      <DependentUpon>MarkaYonetimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriYonetimi.Designer.cs">
+      <DependentUpon>MusteriYonetimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AnaMenu.resx">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KategoriYonetimi.resx">
+      <DependentUpon>KategoriYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KullaniciYonetimi.resx">
       <DependentUpon>KullaniciYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarkaYonetimi.resx">
+      <DependentUpon>MarkaYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriYonetimi.resx">
+      <DependentUpon>MusteriYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,6 +125,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SiparisYonetimi.Business\SiparisYonetimi.Business.csproj">
+      <Project>{d4e3adc4-1bcb-4c87-8393-2da51179987c}</Project>
+      <Name>SiparisYonetimi.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiparisYonetimi.Entities\SiparisYonetimi.Entities.csproj">
+      <Project>{f5569008-b985-4ceb-b673-7194083e5e5f}</Project>
+      <Name>SiparisYonetimi.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
