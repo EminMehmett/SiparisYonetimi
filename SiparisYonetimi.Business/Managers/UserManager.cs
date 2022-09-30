@@ -16,9 +16,15 @@ namespace SiparisYonetimi.Business.Managers
         {
             return context.Users.ToList();
         }
+
         public List<User> GetAll(string kelime)
         {
             return context.Users.Where(user => user.Name.Contains(kelime) || user.SurName.Contains(kelime)).ToList();
+        }
+        public User GetUser(string kullaniciAdi, string sifre)
+        {
+            var user = context.Users.FirstOrDefault(u => u.Username == kullaniciAdi && u.Password == sifre && u.IsAdmin && u.IsActive);
+            return user;
         }
         public int Add(User user)
         {

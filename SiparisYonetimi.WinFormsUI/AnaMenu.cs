@@ -40,5 +40,16 @@ namespace SiparisYonetimi.WinFormsUI
             MusteriYonetimi müsteriYonetimi = new MusteriYonetimi();
             müsteriYonetimi.ShowDialog();
         }
+
+        private void ürünYönetimiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UrunYonetimi urunYonetimi = new UrunYonetimi();
+            urunYonetimi.ShowDialog();
+        }
+
+        private void AnaMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); // Eğer ana ekran kapatılırsa uygulamayı kapat(durdur)
+        }
     }
 }
